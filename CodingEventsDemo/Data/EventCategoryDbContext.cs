@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CodingEventsDemo.Data
 {
-    public class EventDbContext : DbContext
+    public class EventCategoryDbContext : DbContext
     {
-        public DbSet<Event> Events { get; set; }
         public DbSet<EventCategory> EventCategories { get; set; }
+        
 
-
-        public EventDbContext(DbContextOptions<EventDbContext> options) : base(options)
+        public EventCategoryDbContext(DbContextOptions<EventCategoryDbContext> options) : base(options)
         {
+
         }
     }
 }
